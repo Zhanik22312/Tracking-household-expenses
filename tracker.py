@@ -26,9 +26,11 @@ def main():
         print("1. Добавить расход")
         print("2. Показать все расходы")
         print("3. Посчитать общую сумму")
-        print("4. Выйти")
+        print("4. Очистить список расходов")
+        print("5. Выйти")
+
         
-        choice = input("Выберите действие (1-4): ").strip()
+        choice = input("Выберите действие (1-5): ").strip()
 
         if choice == '1':
             name = input("Введите название покупки: ").strip()
@@ -53,6 +55,11 @@ def main():
             print(f"\nОбщая сумма всех расходов: {total} ₸")
 
         elif choice == '4':
+            expenses.clear()
+            save_expenses(expenses)
+            print("Список расходов очищен!")
+
+        elif choice == '5':
             print("Выход из программы. Хорошего дня!")
             break
         else:
