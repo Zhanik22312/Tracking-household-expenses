@@ -1,3 +1,4 @@
+print("Ты лох")
 import json
 import os
 
