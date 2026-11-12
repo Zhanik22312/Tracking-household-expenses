@@ -27,7 +27,7 @@ Console home expense tracker written in Python with JSON data persistence, unit 
 
 `ПРЕДУПРЕЖДЕНИЕ. Следовать инструкциям ниже`
 ```bash
-python main.py
+python tracker.py
 ```
 
 
